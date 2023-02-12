@@ -1,33 +1,20 @@
 <template>
   <h1>{{ msg }}</h1>
 
-  <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">
-      Vite Documentation
-    </a>
-    |
-    <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Documentation</a>
-  </p>
-
-  <button type="button" @click="state.count++">count is: {{ state.count }}</button>
-  <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
-</template>
-
-<script setup>
-import { defineProps, reactive } from 'vue'
-
-defineProps({
-  msg: String
-})
-
-const state = reactive({ count: 0 })
-</script>
-
-<style scoped>
-a {
-  color: #42b983;
-}
-</style>
+  <div class="buttons">
+  <button class="btnDup">Duplicate</button>
+  <button id="del">Delete</button>
+  <button class="btnDet">Details</button> 
+  <button class="btnHead">Change Header</button>
+  <button  class="btnBack">Change Background</button>
+  </div>
+<div class="borders">
+  <div class="card">
+  <h2>Nick Singleton </h2> 
+<img src=https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkyMjQwNTI1ODcxNDI1MDcw/nicholas-singleton.jpg alt="Nick Singleton"> <br>
+  
+  <div>
+    <p class="body" >Star Football Runningback for the Penn State Nittany Lions!<br>Big Ten's Freshman of the Year in 2022</p>
+    </div>
+  </div>
+</div>
